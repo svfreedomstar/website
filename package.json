@@ -1,0 +1,37 @@
+{
+  "name": "svfreedomstar",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "npm run css",
+    "css-compile": "sass --style=compressed scss/:css/",
+    "css-lint": "stylelint scss/",
+    "css": "npm-run-all css-compile",
+    "server": "serve --listen 9000",
+    "start": "npm-run-all --parallel watch server",
+    "watch": "nodemon -e html,scss -x \"npm run css\"",
+    "test": "npm run css-lint && npm run css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/svfreedomstar/website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/svfreedomstar/website/issues"
+  },
+  "homepage": "https://github.com/svfreedomstar/website#readme",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "sass": "^1.51.0",
+    "npm-run-all": "^4.1.5",
+    "nodemon": "^2.0.16",
+    "postcss": "^8.2.10",
+    "postcss-cli": "^8.3.1",
+    "serve": "^13.0.2",
+    "stylelint": "^14.8.1",
+    "stylelint-config-standard": "^25.0.0"
+  }
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head id="head">
+        <meta charset="utf-8">
+
+        <title>Sailing Freedom Star</title>
+        <meta name="description" content="Sailing Freedom Star is a YouTube lifestyle channel focused on ocean and maritime education and entertainment. Join Captain G as he sails around the world.">
+        <meta name="keywords" content="Sailing, Sailboats, Sail, YouTube, YouTube Channel, Sailing Lifestyle, Social Media, Entertainment">
+        <meta name="author" content="Captain G">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+
+        <link rel="stylesheet" href="/css/main.css">
+    </head>
+    <body class="text-center">
+        <div class="container-fluid p-0 mx-auto" id="home">
+            <div class="cover-container d-flex h-100 p-0 mx-auto flex-column">
+                <header class="masthead mb-auto justify-content-center p-2">
+                    <div class="inner">
+                        <h5 class="masthead-brand">
+                            <img class="logo" src="images/logo-white.png" alt="Sailing Freedom Star">
+                            Freedom Star
+                        </h5>
+                    <nav class="nav nav-masthead justify-content-center">
+                        <a class="nav-link" href="#episodes">Episodes</a>
+                        <a class="nav-link" href="#boat">Boat</a>
+                        <a class="nav-link" href="#shop">Shop</a>
+                        <a class="nav-link" href="#contact">Contact</a>
+                        <span class="p-2"></span>
+                        <a class="p-2" href="https://www.facebook.com/svfreedomstar" target="_blank"><i class="bi bi-facebook"></i></a>
+                        <a class="p-2" href="https://www.youtube.com/channel/UCrJ8wSYJy5x3K_dkp5KHnxA" target="_blank"><i class="bi bi-youtube"></i></a>
+                        <a class="p-2" href="https://www.instagram.com/u/svfreedomstar" target="_blank"><i class="bi bi-instagram"></i></a>
+                    </nav>
+                    </div>
+                </header>
+            
+                <main role="main" class="inner cover text-start">
+                    <h1 class="cover-heading">A dream begins.</h1>
+                    <p class="lead">If you could go anywhere, where would you go? What would you see? Would you travel to remote islands? Or would you visit ancient civilizations?</p>
+                    <p class="lead">
+                    <a href="#boat" class="btn btn-lg btn-primary">Learn more</a>
+                    </p>
+                </main>
+            
+                <footer class="mastfoot mt-auto">
+                    <div class="inner">
+                    <p>Made with ❤️ by The Crew. &copy; 2022</p>
+                    </div>
+                </footer>
+            </div>
+          <div class="content">
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="#FFFFFF" />
+            </g>
+            </svg>
+          </div>
+          <div class="container-md section h-100 p-4 mx-auto">
+            <article class="flex-column p-4 g-4">
+                <a name="episodes"/>
+                <h3 class="m-2">Latest Episodes</h3>
+                <div class="border-top p-3" id="videos">
+                </div>
+            </article>
+            <article class="flex-column px-4 gx-4">
+                <a name="boat"/>
+                <h3 class="m-2">Boat</h3>
+                <p class="border-top p-3">
+                    <img class="img img-fluid float-start m-4" width="50%" src="images/boat.jpg">
+                    <p class="text-start m-4">Built in 1994 by Catalina Yachts, Freedom Star is a 1995 Catalina 36' MKii. She has a 4'8" draft on a wing keel. She's a bermuda rigged sloop capable of handling winds up to 30kts. She's 31' at the waterline making her a pretty fast ship at 7kts.<br/>
+                    She has two (2) Kyocera 130w solar panels.<br/><br/><br/>More photos coming soon.
+                    </p>
+                </p>
+            </article>
+            <article class="flex-column px-4 gx-4">
+                <a name="contact"/>
+                <h3 class="m-2">Contact</h3>
+                <div class="border-top p-3">
+                    <p>Coming Soon</p>
+                </div>
+            </article>
+          </div>
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script>
+
+            const video_list = [
+                "HU3TElcNRhQ",
+                "cvbsSSxeoAY",
+                "KB1IA4sZEgE",
+                "dQz69NObI0I"
+            ];
+
+            $(document).ready(() => {
+                let videos = $("#videos");
+                video_list.forEach((v) => {
+                    videos.append(`<iframe class="p-2" width="270" height="152" src="https://www.youtube.com/embed/${v}?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`)
+                });
+            });
+            
+            function scrollTo(aid){
+                var aTag = $("a[name='"+ aid +"']");
+                $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+            }
+        </script>
+    </body>
+</html>
